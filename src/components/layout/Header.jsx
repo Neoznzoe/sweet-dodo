@@ -5,7 +5,7 @@ import Button from "../common/Button";
 
 const Header = () => {
     return (
-        <header className="header main-container">
+        <header className="header">
         <div className="logo">
             {/* <img src={logo} alt="Logo Sweet Dodo" /> */}
             <a href="/"><h1>Sweet Dodo</h1></a>
@@ -13,7 +13,7 @@ const Header = () => {
         <nav className="nav">
             <ul className="nav-list">
                 <li><a href="/">Accueil</a></li>
-                <li><a href="/about">À propos</a></li>
+                <li><a href="/about">FAQ</a></li>
                 <li><a href="/contact">Contact</a></li>
                 <li><a href="/Signup"><Button text="Je m'inscris" color="#FF859F" variant="outlined" /></a></li>
                 <li><a href="/Signup"><Button text="Connexion" color="#FF859F" variant="filled"/></a></li>
