@@ -1,0 +1,42 @@
+.custom-button {
+    padding: 0.5rem 1.5rem;
+    border: 1px solid;
+    border-radius: 9999px; /* Bouton arrondi type "pill" */
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s cubic-bezier(0.79, 0.33, 0.14, 0.53), color 0.2s cubic-bezier(0.79, 0.33, 0.14, 0.53);
+  }
+  
+  /* -----------------------------------------------------
+     OUTLINED
+     - Fond transparent, bordure colorée, texte coloré
+     - Survol : fond coloré, texte blanc
+  ------------------------------------------------------ */
+  .custom-button.outlined {
+    background-color: transparent;
+    border-color: var(--button-color);
+    color: var(--button-color);
+  }
+  
+  .custom-button.outlined:hover {
+    background-color: var(--button-color);
+    color: #fff;
+  }
+  
+  /* -----------------------------------------------------
+     FILLED
+     - Fond coloré, texte blanc
+     - Survol : on assombrit le fond sans affecter le texte
+  ------------------------------------------------------ */
+  .custom-button.filled {
+    position: relative; 
+    overflow: hidden;
+    color: #fff;
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+  }
+  
+  .custom-button.custom-button.filled:hover {
+    background-color: #FF476F;
+  }
